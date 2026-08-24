@@ -27,13 +27,41 @@
       <img src="assets/images/logo.svg">
     </div>
 
-    <nav>
+    <nav class="desktop-nav">
       <a href="#">Home</a>
       <a href="#">New</a>
       <a href="#">Popular</a>
       <a href="#">Trending</a>
       <a href="#">Categories</a>
     </nav>
+
+     <button class="hamburger">
+        <img src="assets/images/icon-menu.svg" alt="open menu">
+      </button>
+
+    <!-- Mobile menu -->
+    <nav class="mobile-nav">
+
+      
+        <button class="close-menu">
+          <img src="assets/images/icon-menu-close.svg" alt="close menu">
+        </button>
+
+      <a href="#">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+
+      </nav>
+     
+
+     
+
+        
+
+
+
 
   </header>
 
@@ -42,7 +70,8 @@
     <div class="grid-container">
 
       <div class="hero-img">
-        <img src="assets/images/image-web-3-desktop.jpg">
+        <img src="assets/images/image-web-3-desktop.jpg" id="desktop-hero">
+        <img src="assets/images/image-web-3-mobile.jpg" id="mobile-hero">
       </div>
 
       <div class="hero-text">
@@ -76,7 +105,7 @@
 
         <div class="new_wrapper">
 
-                  <p class="new_heading_big">New</p>
+          <p class="new_heading_big">New</p>
 
 
 
@@ -179,6 +208,8 @@
 
 
   </main>
+
+  <script src="menu.js"></script>
 
 
 </body>

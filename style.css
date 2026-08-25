@@ -286,7 +286,11 @@ h1 {
 
     .hamburger {
         display: block;
+        background: transparent;
+        border: none;
+        
     }
+  
 
     .mobile-nav {
         position: fixed;
@@ -301,15 +305,22 @@ h1 {
         display: flex;
         flex-direction: column;
         align-items: left;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 1rem;
         transform: translateX(100%);
 
         transition: transform 0.3s ease;
         z-index: 2;
+        padding: 8rem 0 0 2rem;
 
 
 
+    }
+
+    .mobile-nav a {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+        color: var(--color-very-dark-blue);
+        font-weight: var(--font-weight-regular);
     }
 
     .mobile-nav.open {
@@ -322,10 +333,12 @@ h1 {
         position: absolute;
         top: 1.5rem;
         right: 1.5rem;
+        background: transparent;
+        border: none;
     }
 
     body {
-        margin: 0 2rem;
+        margin: 0 1rem;
     }
 
     h1 {
@@ -366,6 +379,11 @@ h1 {
         padding: 1.5rem;
         gap: 1.5rem;
         justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 15vw;
+        height: auto;
     }
 
 

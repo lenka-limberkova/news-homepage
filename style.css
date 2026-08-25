@@ -73,6 +73,10 @@ nav a {
     opacity: 0.6;
 }
 
+nav a:hover {
+    color: var(--color-primary-red);
+}
+
 .hamburger {
     display: none;
 }
@@ -132,7 +136,7 @@ nav a {
 
 }
 
-.new_wrapper {
+.new-wrapper {
     background-color: var(--color-very-dark-blue);
     display: flex;
     flex-direction: column;
@@ -141,25 +145,32 @@ nav a {
     justify-content: space-evenly;
 }
 
-.new_heading_big {
+.new-heading-big {
     color: var(--color-primary-orange);
     font-size: clamp(1.8rem, 2.5vw, 2.2rem);
     font-weight: var(--font-weight-bold);
     margin: -1.5rem 0;
 }
 
-.new_heading_small {
+.new-heading-small {
     color: var(--color-off-white);
     font-size: clamp(0.95rem, 1.2vw, 1.1rem);
     font-weight: var(--font-weight-bold);
 }
 
-.new_text {
+.new-heading-small:hover {
+    cursor: pointer;
+    color: var(--color-primary-orange);
+
+}
+
+
+.new-text {
     color: var(--color-grayish-blue);
     opacity: 0.7;
 }
 
-.new_text_wrapper {
+.new-text-wrapper {
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
@@ -188,7 +199,7 @@ h1 {
 }
 
 
-.text_button {
+.text-button {
     grid-area: text-button;
     display: flex;
     flex-direction: column;
@@ -207,12 +218,21 @@ h1 {
 
 }
 
+.button:hover {
+    background-color: var(--color-very-dark-blue);
+}
+
 .button a {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     color: var(--color-very-dark-blue);
     font-weight: var(--font-weight-bold);
     text-decoration: none;
+    font-size: 80%;
+}
+
+.button a:hover {
+    color: var(--color-off-white);
 }
 
 
@@ -241,7 +261,7 @@ h1 {
     font-weight: var(--font-weight-bold);
 }
 
-.row_heading {
+.row-heading {
     font-weight: var(--font-weight-extra-bold);
 }
 
@@ -364,7 +384,7 @@ h1 {
         font-size: clamp(2.5rem, 10vw, 3.5rem);
     }
 
-    .text_button {
+    .text-button {
         padding-right: 0;
         gap: 1.5rem;
     }
@@ -393,7 +413,7 @@ h1 {
         flex: 1;
     }
 
-    .new_wrapper {
+    .new-wrapper {
         height: auto;
         padding: 1.5rem;
         gap: 1.5rem;
